@@ -7,7 +7,7 @@ Built as a portfolio project to demonstrate Python, SQL, ETL pipeline, and data 
 
 ## Key Findings
 
-- Only **36 out of 224 countries** have ever produced nuclear energy
+- Only **36 countries** have ever produced nuclear energy
 - The **USA** leads with 533 TWh average historical production — more than double France
 - Italy abandoned nuclear power after the **1987 referendum**, when its share was just 4.5% of the electricity mix
 - After 1987, **gas consumption in Italy grew by +109 TWh** — nearly 5x — replacing nuclear and driving all demand growth
