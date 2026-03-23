@@ -13,6 +13,8 @@ Built as a portfolio project to demonstrate Python, SQL, ETL pipeline, and data 
 - After 1987, **gas consumption in Italy grew by +109 TWh** — nearly 5x — replacing nuclear and driving all demand growth
 - A realistic counterfactual analysis (based on documented plant capacity) suggests Italy could have produced **~20 TWh/year** by 1991, placing it in the lower range of European nuclear producers
 - Completing only Montalto di Castro (80% built in 1988, never opened) would have saved an estimated **642 TWh of gas** and avoided **307 Mt of CO2** between 1988 and 2024
+- Even completing only Montalto di Castro, Italy would have reached a **maximum of 9.3%** nuclear share in 1991 — well below the European average of ~40%. 
+  By 2024 it would have declined to ~6%, confirming nuclear was always a marginal support source in the Italian energy mix, not a dominant one
 
 ---
 
@@ -41,6 +43,9 @@ Built as a portfolio project to demonstrate Python, SQL, ETL pipeline, and data 
 
 ### Italy — European validation (real unscaled trajectories)
 ![European validation](plots/08_confronto_europeo_reale.png)
+
+### Italy — nuclear share % vs European countries
+![Nuclear share comparison](plots/09_quota_nucleare_confronto_europeo.png)
 
 ---
 
