@@ -1,7 +1,7 @@
 # Nuclear Data Analysis
 
 Exploratory data analysis on open nuclear energy datasets (Our World in Data / Energy Institute).  
-Built as a portfolio project to demonstrate Python, SQL, and data visualization skills.
+Built as a portfolio project to demonstrate Python, SQL, ETL pipeline, and data visualization skills.
 
 ---
 
@@ -11,7 +11,8 @@ Built as a portfolio project to demonstrate Python, SQL, and data visualization 
 - The **USA** leads with 533 TWh average historical production — more than double France
 - Italy abandoned nuclear power after the **1987 referendum**, when its share was just 4.5% of the electricity mix
 - After 1987, **gas consumption in Italy grew by +109 TWh** — nearly 5x — replacing nuclear and driving all demand growth
-- A counterfactual analysis suggests Italy could have reached **15–19 TWh** of nuclear production by 2023 under moderate/optimistic scenarios
+- A realistic counterfactual analysis (based on documented plant capacity) suggests Italy could have produced **~20 TWh/year** by 1991, placing it in the lower range of European nuclear producers
+- Completing only Montalto di Castro (80% built in 1988, never opened) would have saved an estimated **642 TWh of gas** and avoided **307 Mt of CO2** between 1988 and 2024
 
 ---
 
@@ -32,8 +33,31 @@ Built as a portfolio project to demonstrate Python, SQL, and data visualization 
 ### France vs Germany — two opposite choices
 ![France vs Germany](plots/04_francia_vs_germania.png)
 
-### Italy — counterfactual analysis
+### Italy — counterfactual analysis (three benchmark scenarios)
 ![Italy counterfactual](plots/05_italia_controfattuale.png)
+
+### Italy — realistic scenario (Montalto di Castro)
+![Italy realistic scenario](plots/07_italia_scenario_realistico.png)
+
+### Italy — European validation (real unscaled trajectories)
+![European validation](plots/08_confronto_europeo_reale.png)
+
+---
+
+## Methodology — Counterfactual Analysis
+
+The realistic scenario is built on documented historical data:
+
+- **Montalto di Castro** (2 x 982 MWe BWR): 80% complete in February 1988, halted by the referendum.  
+  Source: Wikipedia, World Nuclear Association
+- **Load factor**: 75% (conservative European average for the period)
+- **Trino Vercellese** (260 MWe): assumed end of operational life ~2000
+- **Post-Fukushima** (2011+): 15% reduction applied for extraordinary maintenance
+
+The scenario places Italy in the **lower range of European nuclear producers** — consistent with Finland, which had a similar installed capacity at the time. It is a conservative estimate, not an optimistic one.
+
+CO2 displacement assumes gas substitution at 490 gCO2/kWh vs nuclear at 12 gCO2/kWh  
+(source: IPCC lifecycle emissions estimates).
 
 ---
 
@@ -42,6 +66,7 @@ Built as a portfolio project to demonstrate Python, SQL, and data visualization 
 - **SQLite** — local database with 2 tables, ~12k rows
 - **SQL** — queries for aggregation, filtering, joins
 - **Jupyter Notebook** — EDA and visualizations
+- **Git / GitHub** — version control and portfolio publishing
 
 ## Project Structure
 ```
@@ -53,7 +78,7 @@ nuclear-data-analysis/
 │   └── nuclear.db    ← SQLite database
 ├── notebooks/
 │   ├── 01_esplorazione_dati.ipynb   ← EDA
-│   └── 02_visualizzazioni.ipynb     ← charts and analysis
+│   └── 02_visualizzazioni.ipynb     ← charts and counterfactual analysis
 ├── sql/              ← saved SQL queries
 ├── etl/
 │   └── load_data.py  ← ETL pipeline
@@ -62,7 +87,9 @@ nuclear-data-analysis/
 
 ## Data Sources
 - [Our World in Data — Energy](https://ourworldindata.org/energy) (Energy Institute / Ember)
-- Original data: Energy Institute Statistical Review of World Energy 2025
+- Energy Institute Statistical Review of World Energy 2025
+- World Nuclear Association — Italy country profile
+- Wikipedia — Montalto di Castro Nuclear Power Station
 
 ## Author
 Giuseppe Vigliotti — [LinkedIn](https://linkedin.com/in/giuseppe-vigliotti)  
