@@ -69,7 +69,7 @@ CO2 displacement assumes gas substitution at 490 gCO2/kWh vs nuclear at 12 gCO2/
 ## Stack
 - **Python** — pandas, numpy, matplotlib, seaborn
 - **SQLite** — local database with 2 tables, ~12k rows
-- **SQL** — queries for aggregation, filtering, joins
+- **SQL** — aggregation, filtering, joins, window functions (LAG, RANK)
 - **Jupyter Notebook** — EDA and visualizations
 - **Git / GitHub** — version control and portfolio publishing
 
@@ -84,7 +84,7 @@ nuclear-data-analysis/
 ├── notebooks/
 │   ├── 01_esplorazione_dati.ipynb   ← EDA
 │   └── 02_visualizzazioni.ipynb     ← charts and counterfactual analysis
-├── sql/              ← saved SQL queries
+├── sql/              ← saved SQL queries (window functions, base exploration)
 ├── etl/
 │   └── load_data.py  ← ETL pipeline
 └── plots/            ← exported charts
