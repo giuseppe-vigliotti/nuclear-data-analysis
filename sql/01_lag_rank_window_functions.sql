@@ -2,10 +2,10 @@ SELECT
     country,
     year,
     nuclear_twh,
-    LAG(nuclear_twh) OVER (PARTITION BY country ORDER BY year) AS anno_precedente,
+    LAG(nuclear_twh) OVER (PARTITION BY country ORDER BY year) AS prev_year,
     ROUND(
         nuclear_twh - LAG(nuclear_twh) OVER (PARTITION BY country ORDER BY year)
-    , 2) AS variazione
+    , 2) AS change
 FROM nuclear_generation
 WHERE country = 'France'
 ORDER BY year;
