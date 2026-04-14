@@ -49,6 +49,18 @@ Built as a portfolio project to demonstrate Python, SQL, ETL pipeline, and data 
 
 ---
 
+## Power BI Dashboard
+
+Interactive dashboard built in Power BI Desktop, connected to the SQLite database via ODBC.
+
+### Top 10 nuclear producers
+![Power BI — Top 10](plots/powerbi_top10.png)
+
+### Italy nuclear history
+![Power BI — Italy history](plots/powerbi_italian_history.png)
+
+---
+
 ## Methodology — Counterfactual Analysis
 
 The realistic scenario is built on documented historical data:
