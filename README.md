@@ -84,6 +84,7 @@ CO2 displacement assumes gas substitution at 490 gCO2/kWh vs nuclear at 12 gCO2/
 - **SQL** — aggregation, filtering, joins, window functions (LAG, RANK)
 - **Jupyter Notebook** — EDA and visualizations
 - **Git / GitHub** — version control and portfolio publishing
+- **Power BI** — interactive dashboard connected to SQLite via ODBC
 
 ## Project Structure
 ```
@@ -96,10 +97,14 @@ nuclear-data-analysis/
 ├── notebooks/
 │   ├── 01_data_exploration.ipynb    ← EDA
 │   └── 02_visualizations.ipynb     ← charts and counterfactual analysis
-├── sql/              ← saved SQL queries (window functions, base exploration)
+├── sql/
+│   ├── 01_lag_rank_window_functions.sql
+│   ├── 02_cte_global_average.sql
+│   └── 03_base_exploration_queries.sql
 ├── etl/
 │   └── load_data.py  ← ETL pipeline
-└── plots/            ← exported charts
+├── plots/            ← exported charts (Python + Power BI)
+└── nuclear_dashboard.pbix  ← Power BI dashboard (connected to SQLite via ODBC)
 ```
 
 ## Data Sources
