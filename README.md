@@ -21,31 +21,31 @@ Built as a portfolio project to demonstrate Python, SQL, ETL pipeline, and data 
 ## Visualizations
 
 ### Top 10 nuclear producers (historical average)
-![Top 10](plots/01_top10_produttori.png)
+![Top 10](plots/01_top10_producers.png)
 
 ### Italy — nuclear history (1965–2025)
-![Italy history](plots/02_italia_storia.png)
+![Italy history](plots/02_italy_history.png)
 
 ### Italy — energy mix: what replaced nuclear?
-![Italy energy mix](plots/02b_italia_mix_energetico.png)
+![Italy energy mix](plots/02b_italy_energy_mix.png)
 
 ### Top 5 countries — historical trend
-![Top 5 trend](plots/03_trend_top5.png)
+![Top 5 trend](plots/03_top5_trend.png)
 
 ### France vs Germany — two opposite choices
-![France vs Germany](plots/04_francia_vs_germania.png)
+![France vs Germany](plots/04_france_vs_germany.png)
 
 ### Italy — counterfactual analysis (three benchmark scenarios)
-![Italy counterfactual](plots/05_italia_controfattuale.png)
+![Italy counterfactual](plots/05_italy_counterfactual.png)
 
 ### Italy — realistic scenario (Montalto di Castro)
-![Italy realistic scenario](plots/07_italia_scenario_realistico.png)
+![Italy realistic scenario](plots/07_italy_realistic_scenario.png)
 
 ### Italy — European validation (real unscaled trajectories)
-![European validation](plots/08_confronto_europeo_reale.png)
+![European validation](plots/08_european_comparison.png)
 
 ### Italy — nuclear share % vs European countries
-![Nuclear share comparison](plots/09_quota_nucleare_confronto_europeo.png)
+![Nuclear share comparison](plots/09_nuclear_share_european_comparison.png)
 
 ---
 
@@ -82,8 +82,8 @@ nuclear-data-analysis/
 ├── db/
 │   └── nuclear.db    ← SQLite database
 ├── notebooks/
-│   ├── 01_esplorazione_dati.ipynb   ← EDA
-│   └── 02_visualizzazioni.ipynb     ← charts and counterfactual analysis
+│   ├── 01_data_exploration.ipynb    ← EDA
+│   └── 02_visualizations.ipynb     ← charts and counterfactual analysis
 ├── sql/              ← saved SQL queries (window functions, base exploration)
 ├── etl/
 │   └── load_data.py  ← ETL pipeline

@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv plots/06_italia_impatto_co2_gas.png plots/06_italy_co2_gas_impact.png)",
+      "Bash(mv plots/08_validazione_scenario_europeo.png plots/08_european_scenario_validation.png)",
+      "Bash(mv notebooks/01_esplorazione_dati.ipynb notebooks/01_data_exploration.ipynb)",
+      "Bash(mv notebooks/02_visualizzazioni.ipynb notebooks/02_visualizations.ipynb)",
+      "Bash(mv sql/02_cte_media_mondiale.sql sql/02_cte_global_average.sql)"
+    ]
+  }
+}
