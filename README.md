@@ -1,7 +1,16 @@
-# Nuclear Data Analysis
+# Italy 1987 Nuclear Referendum — Historical and Counterfactual Analysis
 
-Exploratory data analysis on open nuclear energy datasets (Our World in Data / Energy Institute).  
-Built as a portfolio project to demonstrate Python, SQL, ETL pipeline, and data visualization skills.
+![Python](https://img.shields.io/badge/Python-pandas%20|%20numpy%20|%20matplotlib-blue)
+![SQL](https://img.shields.io/badge/SQL-SQLite%20|%20window%20functions-orange)
+![Power BI](https://img.shields.io/badge/Power%20BI-ODBC%20connected-yellow)
+![Status](https://img.shields.io/badge/status-active%20development-green)
+
+Historical and counterfactual analysis of nuclear energy production,
+with a focus on Italy's post-1987 referendum trajectory.
+Data pipeline built on open datasets (Our World in Data / Energy Institute / World Nuclear Association).
+
+**Core question:** what would Italy's energy mix look like today
+if the Montalto di Castro plant — 80% complete in 1988 — had been commissioned?
 
 ---
 
@@ -13,8 +22,25 @@ Built as a portfolio project to demonstrate Python, SQL, ETL pipeline, and data 
 - After 1987, **gas consumption in Italy grew by +109 TWh** — nearly 5x — replacing nuclear and driving all demand growth
 - A realistic counterfactual analysis (based on documented plant capacity) suggests Italy could have produced **~20 TWh/year** by 1991, placing it in the lower range of European nuclear producers
 - Completing only Montalto di Castro (80% built in 1988, never opened) would have saved an estimated **642 TWh of gas** and avoided **307 Mt of CO2** between 1988 and 2024
-- Even completing only Montalto di Castro, Italy would have reached a **maximum of 9.3%** nuclear share in 1991 — well below the European average of ~40%. 
+- Even completing only Montalto di Castro, Italy would have reached a **maximum of 9.3%** nuclear share in 1991 — well below the European average of ~40%.
   By 2024 it would have declined to ~6%, confirming nuclear was always a marginal support source in the Italian energy mix, not a dominant one
+
+---
+
+## Methodology — Counterfactual Analysis
+
+The realistic scenario is built on documented historical data:
+
+- **Montalto di Castro** (2 x 982 MWe BWR): 80% complete in February 1988, halted by the referendum.
+  Source: Wikipedia, World Nuclear Association
+- **Load factor**: 75% (conservative European average for the period)
+- **Trino Vercellese** (260 MWe): assumed end of operational life ~2000
+- **Post-Fukushima** (2011+): 15% reduction applied for extraordinary maintenance
+
+The scenario places Italy in the **lower range of European nuclear producers** — consistent with Finland, which had a similar installed capacity at the time. It is a conservative estimate, not an optimistic one.
+
+CO2 displacement assumes gas substitution at 490 gCO2/kWh vs nuclear at 12 gCO2/kWh
+(source: IPCC lifecycle emissions estimates).
 
 ---
 
@@ -61,23 +87,6 @@ Interactive dashboard built in Power BI Desktop, connected to the SQLite databas
 
 ---
 
-## Methodology — Counterfactual Analysis
-
-The realistic scenario is built on documented historical data:
-
-- **Montalto di Castro** (2 x 982 MWe BWR): 80% complete in February 1988, halted by the referendum.  
-  Source: Wikipedia, World Nuclear Association
-- **Load factor**: 75% (conservative European average for the period)
-- **Trino Vercellese** (260 MWe): assumed end of operational life ~2000
-- **Post-Fukushima** (2011+): 15% reduction applied for extraordinary maintenance
-
-The scenario places Italy in the **lower range of European nuclear producers** — consistent with Finland, which had a similar installed capacity at the time. It is a conservative estimate, not an optimistic one.
-
-CO2 displacement assumes gas substitution at 490 gCO2/kWh vs nuclear at 12 gCO2/kWh  
-(source: IPCC lifecycle emissions estimates).
-
----
-
 ## Stack
 - **Python** — pandas, numpy, matplotlib, seaborn
 - **SQLite** — local database with 2 tables, ~12k rows
@@ -114,5 +123,5 @@ nuclear-data-analysis/
 - Wikipedia — Montalto di Castro Nuclear Power Station
 
 ## Author
-Giuseppe Vigliotti — [LinkedIn](https://linkedin.com/in/giuseppe-vigliotti)  
+Giuseppe Vigliotti — [LinkedIn](https://linkedin.com/in/giuseppe-vigliotti)
 MSc Nuclear Engineering, Politecnico di Milano
