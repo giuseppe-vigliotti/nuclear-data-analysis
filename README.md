@@ -14,6 +14,23 @@ if the Montalto di Castro plant — 80% complete in 1988 — had been commission
 
 ---
 
+## Methodology — Counterfactual Analysis
+
+The realistic scenario is built on documented historical data:
+
+- **Montalto di Castro** (2 x 982 MWe BWR): 80% complete in February 1988, halted by the referendum.
+  Source: Sources: World Nuclear Association — Nuclear Power in Italy (https://world-nuclear.org/information-library/country-profiles/countries-g-n/italy); ENEA — Il nucleare in Italia: storia e prospettive (2011); IAEA PRIS — historical load factor data (https://pris.iaea.org)
+- **Load factor**: 75% (conservative European average for the period)
+- **Trino Vercellese** (260 MWe): assumed end of operational life ~2000
+- **Post-Fukushima** (2011+): 15% reduction applied for extraordinary maintenance
+
+The scenario places Italy in the **lower range of European nuclear producers** — consistent with Finland, which had a similar installed capacity at the time. It is a conservative estimate, not an optimistic one.
+
+CO2 displacement assumes gas substitution at 490 gCO2/kWh vs nuclear at 12 gCO2/kWh
+(source: IPCC lifecycle emissions estimates).
+
+---
+
 ## Key Findings
 
 - Only **36 countries** have ever produced nuclear energy
@@ -24,23 +41,6 @@ if the Montalto di Castro plant — 80% complete in 1988 — had been commission
 - Completing only Montalto di Castro (80% built in 1988, never opened) would have saved an estimated **642 TWh of gas** and avoided **307 Mt of CO2** between 1988 and 2024
 - Even completing only Montalto di Castro, Italy would have reached a **maximum of 9.3%** nuclear share in 1991 — well below the European average of ~40%.
   By 2024 it would have declined to ~6%, confirming nuclear was always a marginal support source in the Italian energy mix, not a dominant one
-
----
-
-## Methodology — Counterfactual Analysis
-
-The realistic scenario is built on documented historical data:
-
-- **Montalto di Castro** (2 x 982 MWe BWR): 80% complete in February 1988, halted by the referendum.
-  Source: Wikipedia, World Nuclear Association
-- **Load factor**: 75% (conservative European average for the period)
-- **Trino Vercellese** (260 MWe): assumed end of operational life ~2000
-- **Post-Fukushima** (2011+): 15% reduction applied for extraordinary maintenance
-
-The scenario places Italy in the **lower range of European nuclear producers** — consistent with Finland, which had a similar installed capacity at the time. It is a conservative estimate, not an optimistic one.
-
-CO2 displacement assumes gas substitution at 490 gCO2/kWh vs nuclear at 12 gCO2/kWh
-(source: IPCC lifecycle emissions estimates).
 
 ---
 
@@ -120,7 +120,9 @@ nuclear-data-analysis/
 - [Our World in Data — Energy](https://ourworldindata.org/energy) (Energy Institute / Ember)
 - Energy Institute Statistical Review of World Energy 2025
 - World Nuclear Association — Italy country profile
-- Wikipedia — Montalto di Castro Nuclear Power Station
+- - World Nuclear Association — Nuclear Power in Italy (https://world-nuclear.org/information-library/country-profiles/countries-g-n/italy)
+- ENEA — Il nucleare in Italia: storia e prospettive (2011)
+- IAEA PRIS — Power Reactor Information System (https://pris.iaea.org)
 
 ## Author
 Giuseppe Vigliotti — [LinkedIn](https://linkedin.com/in/giuseppe-vigliotti)
