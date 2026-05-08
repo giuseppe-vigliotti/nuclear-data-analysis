@@ -90,6 +90,7 @@ completing all plants under construction.*
 *Italy's hypothetical nuclear share would have peaked at 9.3% in 1991 — less than a quarter 
 of the European average (~40%) at the time, declining to ~6% by 2024.*  
 *Source: Our World in Data / Energy Institute — Statistical Review of World Energy 2024.*
+
 ---
 
 ## Power BI Dashboard
